@@ -22,7 +22,7 @@ const AppRoutes = () => {
       <header>
         <div className="header__nav_language">
           <span className="lang_btn ua" onClick={() => handleClickChangeLanguage(ukraine)}>UA</span>
-          <span className="lang_btn en" onClick={() => handleClickChangeLanguage(english)}>EU</span>
+          <span className="lang_btn en" onClick={() => handleClickChangeLanguage(english)}>EN</span>
           <span className="lang_btn pl" onClick={() => handleClickChangeLanguage(poland)}>PL</span>
         </div>
         <Header lang_text={lng}/>
