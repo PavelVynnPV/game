@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/game/static/css/main.c41938c8.css",
+    "main.css": "/game/static/css/main.9960778d.css",
     "main.js": "/game/static/js/main.ccf474ce.js",
-    "static/media/cb.png": "/game/static/media/cb.255c651287e223db2fd8.png",
+    "static/media/mnn.png": "/game/static/media/mnn.e211288d44138afcfbc4.png",
     "static/media/kfkk.png": "/game/static/media/kfkk.fd35102801e6934a2271.png",
     "index.html": "/game/index.html",
-    "main.c41938c8.css.map": "/game/static/css/main.c41938c8.css.map",
+    "main.9960778d.css.map": "/game/static/css/main.9960778d.css.map",
     "main.ccf474ce.js.map": "/game/static/js/main.ccf474ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.c41938c8.css",
+    "static/css/main.9960778d.css",
     "static/js/main.ccf474ce.js"
   ]
 }
