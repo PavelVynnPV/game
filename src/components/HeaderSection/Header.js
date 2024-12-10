@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../img/logo.png"
+import logo from "../img/lg.png"
 import "./Header.css";
 
 const Header = (lang_text, handleClickChangeLanguage) => {
@@ -28,7 +28,7 @@ const Header = (lang_text, handleClickChangeLanguage) => {
           <div className="header__main_container">
             <h1 className="header__main_title">{web_lng.title} <span id="dayz_word">DayZ</span></h1>
             <h1 className="header__main_title">{web_lng.title2}</h1>
-            <p className="header__main_underTitle_text">{web_lng.underTitle}</p>
+            {/* <p className="header__main_underTitle_text">{web_lng.underTitle}</p> */}
             <p className="header__main_underTitle_text underTitle_second">{web_lng.aboveIpText}</p>
             <div className="header__main_ip_port">
               <span className="ip">Ip: 144.76.103.125</span>
