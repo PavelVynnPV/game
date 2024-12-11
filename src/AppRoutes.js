@@ -28,7 +28,7 @@ const AppRoutes = () => {
         <Header lang_text={lng}/>
       </header>
 
-      <div className="copyright">© 2024 NM DayZ.</div>
+      <footer className="copyright">© 2024 NM DayZ.</footer>
     </Router>
   );
   
