@@ -2,15 +2,23 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
 import "./Header.css";
-import styles from "./Header.css"
 
 const Header = (lang_text, handleClickChangeLanguage) => {
   const [ip, setIp] = useState(false);
   const [port, setPort] = useState(false);
 
-  const handleCopyText = (text) => {
-    navigator.clipboard.writeText(text);
-  };
+  // const handleCopyText = (text) => {
+  //   navigator.clipboard.writeText(text);
+  // };  
+
+  async function copyPageUrl(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Page URL copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
 
   const ipCopiedCheck = (ip) => {
     setIp(ip)
@@ -57,11 +65,11 @@ const Header = (lang_text, handleClickChangeLanguage) => {
                   Ip:{" "}
                   <span
                     onClick={(e) => {
-                      handleCopyText(e.target.innerText);
+                      copyPageUrl(e.target.innerText);
                       ipCopiedCheck(true);
                     }}
                   >
-                    144.76.103.125
+                    95.217.33.171
                   </span>
                   <span className={!ip ? "disabled" : "copied_text"}>copied✓</span>
                 </span>
@@ -69,9 +77,8 @@ const Header = (lang_text, handleClickChangeLanguage) => {
                   Port:{" "}
                   <span
                     onClick={(e) => {
-                      handleCopyText(e.target.innerText);
+                      copyPageUrl(e.target.innerText);
                       portCopiedCheck(true)
-                      setPort(true);
                     }}
                   >
                     2302
