@@ -2,6 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 * {
@@ -14,12 +15,17 @@ a {
 
 header {
   width: 100%;
-  height: 100vh;
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url(../img/background.png);
+}
+.background_img {
+  width: 100%;
+  height: 110vh;
   background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(../img/background.png);
+  position: fixed;
   background-size: cover;
   background-position: center;
 }
@@ -29,12 +35,12 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px 20px 40px;
+  padding: 0 40px 0px 40px;
 }
 
 .header__main_container {
   justify-content: space-between;
-  min-height: 70vh;
+  min-height: 68vh;
 }
 
 .header__nav_logo_links {
@@ -42,7 +48,7 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 100px;
-  padding-right: 180px;
+  padding: 0 180px 0 50px;
 }
 .header__nav_logo {
   background-repeat: no-repeat;
@@ -64,6 +70,8 @@ header {
   padding: 10px 50px 0px 0;
   gap: 20px;
   font-size: 12px;
+  z-index: 3;
+  position: relative;
 }
 .lang_btn,
 .link_btn {
@@ -189,6 +197,11 @@ header {
     padding-bottom: 0;
   }
 }
+@media (max-width: 800px) {
+  .header__nav_logo_links {
+    padding-right: 10px !important;
+  }
+}
 
 @media (max-width: 700px) {
   .header__main_title {
@@ -198,8 +211,18 @@ header {
     padding: 0;
   }
   .header__nav_logo_links {
-    padding-right: 20px;
+    padding-right: 5px;
     transition: 1s all ease;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .header__nav_logo {
+    width: 200px;
+  }
+  .header__nav_language {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 580px) {
@@ -207,6 +230,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 5px !important;
   }
   .header__nav_logo {
     justify-content: center;
@@ -267,6 +291,11 @@ header {
   }
   .copied_text_port {
     right: 40px;
+  }
+  .header__nav_links {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 

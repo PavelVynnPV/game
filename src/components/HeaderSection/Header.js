@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../img/logo.png";
 import "./Header.css";
 
 const Header = (lang_text, handleClickChangeLanguage) => {
@@ -34,19 +32,6 @@ const Header = (lang_text, handleClickChangeLanguage) => {
   return (
     <div className="header">
       <div className="header__container">
-        <div className="header__nav">
-          <div className="header__nav_logo_links__container">
-            <div className="header__nav_logo_links">
-              <Link to="/" className="header__nav_logo">
-                <img src={logo} alt="" />
-              </Link>
-              <div className="header__nav_links">
-                <Link to="https://discord.gg/nightmaregames" className="link_btn disc">{web_lng.disc_btn}</Link>
-                <Link to="https://www.youtube.com/@egororlean" className="link_btn youtube">{web_lng.yube_btn}</Link>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="header__main">
           <div className="header__main_container">
             <div className="header__main_title_box">
