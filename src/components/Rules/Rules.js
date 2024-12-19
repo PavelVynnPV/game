@@ -4,7 +4,6 @@ import "./Rules.css";
 
 const Rules = ({rules_lng, mainRules, buildRules, setOpenModalRules}) => {
   const rulTitle = rules_lng;
-  console.log(mainRules)
   return (
     <div className="rules">
       <span className="close_btn" onClick={() => setOpenModalRules(false)}>x</span>
