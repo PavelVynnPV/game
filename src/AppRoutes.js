@@ -12,6 +12,7 @@ import { ukraine } from "./components/HeaderSection/HeaderLanguageComp";
 import "./components/HeaderSection/Header.css";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const AppRoutes = () => {
   const [lng, setLng] = useState(ukraine);
@@ -61,8 +62,9 @@ const AppRoutes = () => {
             />
           </>
         </Routes>
+        <Footer/> 
         </Router>
-    </>
+        </>
   );
 };
 

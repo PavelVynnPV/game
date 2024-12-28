@@ -124,7 +124,6 @@ const Header = (lang_text, handleClickChangeLanguage) => {
           </div>
         </div>
       </div>
-      <footer className="copyright">© 2024 NM DayZ.</footer>
       </div>
   );
 };

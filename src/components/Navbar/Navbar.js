@@ -113,6 +113,12 @@ const Navbar = ({
                 {lng.disc_btn}
               </Link>
               <Link
+                to="https://www.tiktok.com/@nightmaregamess"
+                className="link_btn tiktok"
+              >
+                {lng.ttok_btn}
+              </Link>
+              <Link
                 to="https://www.youtube.com/@egororlean"
                 className="link_btn youtube"
               >

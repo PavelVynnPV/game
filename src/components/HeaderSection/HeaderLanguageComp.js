@@ -1,5 +1,6 @@
 export const ukraine = {
   disc_btn: "Діскорд",
+  ttok_btn: "ТікТок",
   yube_btn: "Ютуб",
   title: "НАСОЛОДЖУЙТЕСЬ ГРОЮ",
   title2: "РАЗОМ З НАМИ !",
@@ -11,6 +12,7 @@ export const ukraine = {
 
 export const english = {
     disc_btn: "Discord",
+    ttok_btn: "TikTok",
     yube_btn: "Youtube",
     title: "ENJOY THE GAME",
     title2: "TOGETHER WITH US!",
@@ -22,6 +24,7 @@ export const english = {
 
   export const poland = {
     disc_btn: "Discord",
+    ttok_btn: "TikTok",
     yube_btn: "Youtube",
     title: "CIESZ SIĘ GRĄ",
     title2: "RAZEM Z NAMI!",
@@ -30,5 +33,3 @@ export const english = {
     aboveIpText: "Uruchom DayZ na Steam i dołącz do naszego serwera.",
     rules_btn: "zasady",
 };
-
-

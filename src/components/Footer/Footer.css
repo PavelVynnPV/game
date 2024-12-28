@@ -1,0 +1,13 @@
+.copyright {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgb(100, 100, 100);
+  position: absolute;
+  bottom: -20px;
+}
+
+footer {
+  width: 100%;
+}
