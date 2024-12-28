@@ -61,8 +61,7 @@ const AppRoutes = () => {
             />
           </>
         </Routes>
-      </Router>
-      <footer className="copyright">© 2024 NM DayZ.</footer>
+        </Router>
     </>
   );
 };
